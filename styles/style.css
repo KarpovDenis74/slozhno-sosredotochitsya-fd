@@ -230,7 +230,7 @@
   line-height: 82.5%;
   text-shadow: 2px 2px 0px var(--accent-color-logo, #FF0070);
 }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
 
   .header__theme-menu {
     margin-right: 10px;
@@ -302,7 +302,7 @@
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
 
   .header__theme-menu {
     justify-self: center;
