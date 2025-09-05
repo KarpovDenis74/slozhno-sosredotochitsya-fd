@@ -218,7 +218,6 @@
   justify-content: center;
   align-items: center;
   max-block-size: 768px;
-  block-size: 100vb;
   padding: var(--indent, 10px);
 }
 
@@ -239,6 +238,10 @@
   .header__description {
     inline-size: max(364px, 47.4vi);
   }
+  .why,
+  .how__to {
+    grid-template-columns: 1fr;
+  }
 
 }
 @media (375px <= width <= 768px) {
@@ -250,6 +253,7 @@
 
   .header__title {
     position: relative;
+    margin-left: -10px;
   }
 
   .header__description {
@@ -292,6 +296,9 @@
   .section__image:nth-of-type(3) {
     grid-row-end: span 2;
   }
+  .footer__title {
+    block-size: 1024px;
+  }
 
 }
 
@@ -312,6 +319,7 @@
 
   .why,
   .how__to {
+    grid-template-columns: 1fr 2fr;
     gap: 10px;
   }
 
