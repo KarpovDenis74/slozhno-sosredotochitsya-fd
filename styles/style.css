@@ -302,7 +302,11 @@
 }
 
 @media (768px < width < 1024px) {
-
+  .what .section__title {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
   .section__pictures {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto min(192px, 26vi) min(230px, 31vi) min(318px, 42vi);
@@ -354,7 +358,11 @@
   .what .section__content {
     grid-template-columns: repeat(3, 1fr);
   }
-
+  .what .section__title {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
 
   .section__pictures {
     grid-template-columns: 1fr 1fr 1fr;
