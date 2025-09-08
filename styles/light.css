@@ -19,6 +19,9 @@
   --accent-color-logo: #FF0070;
   background-image: url(../images/cover-image-light.png);
 }
+  .page.theme_light{
+  background-image: url(../images/cover-image-light.png);
+  }
 
 .theme_light .header__decor {
   display: none;
@@ -34,7 +37,7 @@
 
 @media (prefers-color-scheme: light) {
 
-  .theme_light {
+  :root {
   --header-title: #FFC2E6;
   --text-color: #353430;
   --bg-color: #FFF1F7;
@@ -42,18 +45,19 @@
   --accent-color-secondary: #353430;
   --button-outline-hover: rgba(50, 49, 45, 0.40);
   --accent-color-logo: #FF0070;
+  }
+  .page.theme_auto {
   background-image: url(../images/cover-image-light.png);
   }
-
-  .theme_light .header__decor {
+  .header__decor {
     display: none;
   }
 
-  .theme_light .title-decor {
+  .title-decor {
     color: currentColor;
   }
 
-  .theme_light .section__title {
+  .section__title {
     color: currentColor;
   }
 }
