@@ -62,9 +62,6 @@
   border-block-start: 1px solid var(--accent-color-secondary, #FF0070);
   border-inline-end: 1px solid var(--accent-color-secondary, #FF0070);
 }
-  .header__title {
-    display: flex;
-  }
 .header__decor {
   position: absolute;
   inset-inline-end: 39px;
@@ -134,6 +131,7 @@
 }
 
 .header__title {
+  display: flex;
   color: var(--header-title);
   font-family: inherit;
   font-size: var(--logo-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
@@ -219,10 +217,10 @@
 
 .footer {
   position: relative;
-  block-size: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  block-size: 100vh;
   min-block-size: 668px;
   padding: var(--indent, 10px);
 }
@@ -304,9 +302,13 @@
   }
 } */
 
-@media (width > 768px) {
+@media (width >= 768px) {
   .header__title {
     margin-left: -20px;
+  }
+  .header__description {
+    inline-size: max(364px, 47.4vi);
+
   }
   .header__decor {
     inset-inline-end: 49px;
