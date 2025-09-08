@@ -33,6 +33,7 @@
 }
 
 @media (prefers-color-scheme: light) {
+
   .theme_light {
   --header-title: #FFC2E6;
   --text-color: #353430;
@@ -41,21 +42,18 @@
   --accent-color-secondary: #353430;
   --button-outline-hover: rgba(50, 49, 45, 0.40);
   --accent-color-logo: #FF0070;
+  background-image: url(../images/cover-image-light.png);
   }
 
-  .page {
-    background-image: url(../images/cover-image-light.png);
-  }
-
-  .header__decor {
+  .theme_light .header__decor {
     display: none;
   }
-  
-  .title-decor {
+
+  .theme_light .title-decor {
     color: currentColor;
   }
-  
-  .section__title {
+
+  .theme_light .section__title {
     color: currentColor;
   }
 }
