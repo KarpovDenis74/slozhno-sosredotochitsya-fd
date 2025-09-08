@@ -270,7 +270,7 @@
 
   .what .section__title {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
 
@@ -300,7 +300,7 @@
   }
 
   .footer {
-    height: 668px;
+    height: 768px;
   }
 }
 
