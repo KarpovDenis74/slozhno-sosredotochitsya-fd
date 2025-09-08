@@ -16,7 +16,7 @@
   --accent-color: #FF0070;
   --accent-color-secondary: #FF0070;
   --button-outline-hover: rgba(255, 0, 112, 0.40);
-
+  --accent-color-logo: #FF0070;
   background-image: url(../images/cover-image-dark.png);
 }
 
