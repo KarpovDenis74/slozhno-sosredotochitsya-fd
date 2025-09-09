@@ -16,7 +16,7 @@
   --accent-color: #FF8DCB;
   --accent-color-secondary: #353430;
   --button-outline-hover: rgba(50, 49, 45, 0.40);
-  --accent-color-logo: #FF0070;
+  --accent-color-logo: #FF8DCB;
   background-image: url(../images/cover-image-light.png);
 }
 
@@ -45,7 +45,7 @@
   --accent-color: #FF8DCB;
   --accent-color-secondary: #353430;
   --button-outline-hover: rgba(50, 49, 45, 0.40);
-  --accent-color-logo: #FF0070;
+  --accent-color-logo: #FF8DCB;
   }
   .page.theme_auto {
   background-image: url(../images/cover-image-light.png);
