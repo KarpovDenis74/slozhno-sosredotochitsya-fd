@@ -49,25 +49,21 @@
   }
 
   .page.theme_auto {
-  background-image: url(../images/cover-image-light.png);
+    background-image: url(../images/cover-image-light.png);
   }
   
   .header__decor {
     display: none;
   }
 
-  .page.theme_auto 
-  .title-decor {
-    color: #353430;  
+  .page.theme_auto .title-decor {
+    color: #353430;
     background-color: var(--accent-color, #FF8DCB);
   }
 
-  .page.theme_auto
-  .section__title {
+  .page.theme_auto .section__title {
     color:  #000028;
   }
-  .page.dark
-  .section__title {
-    color:  #000028;
-  }
+
+
 }
