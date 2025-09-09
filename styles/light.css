@@ -56,9 +56,18 @@
     display: none;
   }
 
+  .theme_light .title-decor {
+    color: #353430;
+    background-color: var(--accent-color, #FF8DCB);
+  }
+
   .page.theme_auto .title-decor {
     color: #353430;
     background-color: var(--accent-color, #FF8DCB);
+  }
+
+  .theme_light.section__title {
+    color:  #000028;
   }
 
   .page.theme_auto .section__title {
