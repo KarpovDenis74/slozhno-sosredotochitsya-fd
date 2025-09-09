@@ -47,19 +47,21 @@
   --button-outline-hover: rgba(50, 49, 45, 0.40);
   --accent-color-logo: #FF8DCB;
   }
+
   .page.theme_auto {
   background-image: url(../images/cover-image-light.png);
   }
+  
   .header__decor {
     display: none;
   }
 
   .page.theme_auto .title-decor {
     color: #353430;  
-    background-color: var(--accent-color, #FF0070);
+    background-color: var(--accent-color, #FF8DCB);
   }
 
-  .section__title {
-    color: currentColor;
+  .page.theme_auto .section__title {
+    color:  #000028;
   }
 }
