@@ -54,8 +54,9 @@
     display: none;
   }
 
-  .title-decor {
-    color: currentColor;
+  .page.theme_auto .title-decor {
+    color: var(--text-color, #353430);  
+    background-color: var(--accent-color, #FF0070);
   }
 
   .section__title {
