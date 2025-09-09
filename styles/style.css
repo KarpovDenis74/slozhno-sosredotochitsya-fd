@@ -20,8 +20,8 @@
   font-weight: 400;
   color: var(--text-color, #F1B2CE);
 
-  background-color: var(--bg-color, gray);
-  background-image: url(../images/cover-image-dark.png);
+  /* background-color: var(--bg-color, gray); */
+  background-image: var(--background-image, url(../images/cover-image-dark.png));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,23 +54,23 @@
   inset-block-end: var(--indent, 10px);
   inset-inline-start: var(--indent, 10px);
   
-  border-block-end: 1px solid var(--accent-color-secondary, #FF0070);
-  border-inline-start: 1px solid var(--accent-color-secondary, #FF0070);
+  border-block-end: 1px solid var(--border-color, #FF0070);
+  border-inline-start: 1px solid var(--border-color, #FF0070);
 }
 
 .decorated-zone::after {
   inset-block-start: var(--indent, 10px);
   inset-inline-end: var(--indent, 10px);
   
-  border-block-start: 1px solid var(--accent-color-secondary, #FF0070);
-  border-inline-end: 1px solid var(--accent-color-secondary, #FF0070);
+  border-block-start: 1px solid var(--border-color, #FF0070);
+  border-inline-end: 1px solid var(--border-color, #FF0070);
 }
 .header__decor {
   position: absolute;
   inset-inline-end: 39px;
   inset-block-start: 11px;
 
-  color: var(--accent-color, #FF0070);
+  color: var(--header-background, #FF0070);
   font: inherit;
   line-height: 138%;
   text-transform: uppercase;
@@ -88,9 +88,9 @@
   block-size: 7px;
   border-radius: 50%;
 
-  background-color: var(--accent-color, #FF0070);
+  background-color: var(--border-color, #FF0070);
 
-  box-shadow: 0 0 3px 3px var(--accent-color, #FF0070);
+  box-shadow: 0 0 3px 3px var(--border-color, #FF0070);
 }
 
 .header__theme-menu {
@@ -105,7 +105,7 @@
 }
 
 .header__theme-menu-item {
-  color: var(--accent-color-secondary, #FF0070);
+  color: var(--button-color, #FF0070);
   font: inherit;
 
 }
@@ -120,7 +120,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--button-outline-hover, rgba(255, 0, 112, 0.40));
+  outline: 1px solid var(--button-color-hover, rgba(255, 0, 112, 0.40));
 }
 
 .header__theme-menu-button:focus-visible {
@@ -135,13 +135,13 @@
 
 .header__title {
   display: flex;
-  color: var(--header-title);
+  color: var(--header-title, #DB00FF);
   font-family: inherit;
   font-size: var(--logo-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
-  text-shadow: 4px 4px 0px var(--accent-color-logo, #FF0070);
+  text-shadow: 4px 4px 0px var(--header-title-shadow, #FF0070);
   opacity: 0.9;
   
 }
@@ -154,11 +154,11 @@
 }
 
 .title-decor {
-  color:  #000028;
+  color:  var(--title-decor-color, #000028);
   font: inherit;
   font-weight: 700;
   
-  background-color: var(--accent-color, #FF0070);
+  background-color: var(--title-decor-background, #FF0070);
 }
 
 .main {
@@ -177,7 +177,7 @@
 .section__title {
   font: inherit;
   font-weight: 700;
-  color:  #FF0070;
+  color:  var(--section-title, #FF0070);
 }
 
 .section__subtitle {
@@ -194,7 +194,7 @@
 
 .section__link {
   text-decoration: none;
-  text-shadow: 2px 1px 0 var(--accent-color, #FF0070);
+  text-shadow: 2px 1px 0 var(--section-link, #F1B2CE);
 
   cursor: pointer;
 }
@@ -235,7 +235,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
-  text-shadow: 2px 2px 0px var(--accent-color-logo, #FF0070);
+  text-shadow: 2px 2px 0px var(--header-title-shadow, #FF0070);
 }
 /* @media (width <= 375px) {
 

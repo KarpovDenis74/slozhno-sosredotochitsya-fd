@@ -9,70 +9,72 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-
-  --header-title: #FFC2E6;
-  --text-color: #353430;
-  --bg-color: #FFF1F7;
-  --accent-color: #FF8DCB;
-  --accent-color-secondary: #353430;
-  --button-outline-hover: rgba(50, 49, 45, 0.40);
-  --accent-color-logo: #FF8DCB;
-  background-image: url(../images/cover-image-light.png);
+  --header-title: var(--pink, #FFC2E6);
+  --header-title-shadow:var(--pink2,  #FF8DCB);
+  --text-color: var(--black2, #353430);
+  --border-color: vavar(--black2, #353430);
+  --header-background: var(--pink2, #FF8DCB);
+  --button-color: var(--black2, #353430);
+  --button-color-hover: var(--black-opasity_40, rgba(50, 49, 45, 0.40));
+  --title-decor-color: var(--black2, #353430);
+  --title-decor-background: var(-pink, #FFC2E6);
+  --section-title: var(--black2, #353430);
+  --section-link: var(--pink2, #FF8DCB);
+  --background-image: url(../images/cover-image-light.png);
 }
-
-.page.theme_light {
-  background-image: url(../images/cover-image-light.png);
-  }
 
 .theme_light .header__decor {
   display: none;
 }
 
 .theme_light .title-decor {
-  color: #353430;
+  color: var(--title-decor-color, #353430);
+  background-color: var(--title-decor-background, #FFC2E6);
 }
 
 .theme_light .section__title {
-  color: #353430;
+  color: var(--section-title, #353430);
+}
+
+.theme_light  .section__link {
+  text-shadow: 2px 1px 0 var(--section-link, #FF8DCB);
 }
 
 @media (prefers-color-scheme: light) {
 
-  :root {
-  --header-title: #FFC2E6;
-  --text-color: #353430;
-  --bg-color: #FFF1F7;
-  --accent-color: #FF8DCB;
-  --accent-color-secondary: #353430;
-  --button-outline-hover: rgba(50, 49, 45, 0.40);
-  --accent-color-logo: #FF8DCB;
+  .theme_light {
+    --header-title: var(--pink, #FFC2E6);
+    --header-title-shadow: var(--pink2,  #FF8DCB);
+    --text-color: var(--black2, #353430);
+    --border-color: var(--black2, #353430);
+    --header-background: var(--pink2, #FF8DCB);
+    --button-color: var(--black2, #353430);
+    --button-color-hover: var(--black-opasity_40, rgba(50, 49, 45, 0.40));
+    --title-decor-color: var(--black2, #353430);
+    --title-decor-background: var(--pink, #FFC2E6);
+    --section-title: var(--black2, #353430);
+    --section-link: var(--pink2, #FF8DCB);
+    --background-image: url(../images/cover-image-light.png);
   }
 
-  .page.theme_auto {
+  /* .page.theme_auto {
     background-image: url(../images/cover-image-light.png);
-  }
-  
-  .header__decor {
+  } */
+
+  .theme_light .header__decor {
     display: none;
   }
 
   .theme_light .title-decor {
-    color: #353430;
-    background-color: var(--accent-color, #FF8DCB);
-  }
-
-  .page.theme_auto .title-decor {
-    color: #353430;
-    background-color: var(--accent-color, #FF8DCB);
+    color: var(--title-decor-color, #353430);
+    background-color: var(--title-decor-background, #FFC2E6);
   }
 
   .theme_light .section__title {
-    color:  #353430;
+    color: var(--section-title, #353430);
   }
 
-  .page.theme_auto .section__title {
-    color:  #353430;
+  .theme_light .section__link {
+    text-shadow: 2px 1px 0 var(--section-link, #FF8DCB);
   }
-
-
 }
