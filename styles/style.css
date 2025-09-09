@@ -9,88 +9,85 @@
 
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-
-  /* padding: 0 var(--indent, 20px); */
-
-  font-family: var(--main-font-family, monospace);
-  font-size: var(--main-font-size, 18px);
-  line-height: var(--main-line-height, 130%);
-  font-style: normal;
-  font-weight: 400;
+  margin: 0 auto;
   color: var(--text-color, #F1B2CE);
+  font-family: var(--main-font-family, monospace);
+  font-weight: 400;
+  font-size: var(--main-font-size, 18px);
+  font-style: normal;
+  line-height: var(--main-line-height, 130%);
 
   /* background-color: var(--bg-color, gray); */
   background-image: var(--background-image, url(../images/cover-image-dark.png));
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
-  margin: 0 auto;
 }
 
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr auto 1fr;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr;
   justify-content: space-between;
+  padding: var(--indent, 10px);
   block-size: 100vh;
   min-block-size: 668px;
-  padding: var(--indent, 10px);
 }
 
 .decorated-zone::before,
 .decorated-zone::after {
-  position: absolute;
   
   content: "";
+  position: absolute;
 
   inline-size: 25px;
   block-size: 25px;
 }
 
 .decorated-zone::before {
-  inset-block-end: var(--indent, 10px);
-  inset-inline-start: var(--indent, 10px);
+  border-inline-start: 1px solid var(--border-color, #FF0070);
   
   border-block-end: 1px solid var(--border-color, #FF0070);
-  border-inline-start: 1px solid var(--border-color, #FF0070);
+  inset-block-end: var(--indent, 10px);
+  inset-inline-start: var(--indent, 10px);
 }
 
 .decorated-zone::after {
-  inset-block-start: var(--indent, 10px);
-  inset-inline-end: var(--indent, 10px);
+  border-inline-end: 1px solid var(--border-color, #FF0070);
   
   border-block-start: 1px solid var(--border-color, #FF0070);
-  border-inline-end: 1px solid var(--border-color, #FF0070);
+  inset-block-start: var(--indent, 10px);
+  inset-inline-end: var(--indent, 10px);
 }
+
 .header__decor {
   position: absolute;
-  inset-inline-end: 39px;
-  inset-block-start: 11px;
 
   color: var(--header-background, #FF0070);
   font: inherit;
   line-height: 138%;
   text-transform: uppercase;
+  inset-inline-end: 39px;
+  inset-block-start: 11px;
 }
 
 .header__decor::after {
+  content: "";
   position: absolute;
-  inset-inline-end: -20px;
-  inset-block-start: 9px;
   
   display: block;
-  content: "";
+  border-radius: 50%;
+
+  box-shadow: 0 0 3px 3px var(--border-color, #FF0070);
+
+  background-color: var(--border-color, #FF0070);
+  inset-inline-end: -20px;
+  inset-block-start: 9px;
 
   inline-size: 7px;
   block-size: 7px;
-  border-radius: 50%;
-
-  background-color: var(--border-color, #FF0070);
-
-  box-shadow: 0 0 3px 3px var(--border-color, #FF0070);
 }
 
 .header__theme-menu {
@@ -111,12 +108,12 @@
 }
 
 .header__theme-menu-button {
+  border: none;
   padding: 0 12px;
   text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
   appearance: none;
-  border: none;
 }
 
 .header__theme-menu-button:hover {
@@ -124,25 +121,25 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: none;
   border-block-end: 1px solid currentColor;
+  outline: none;
 }
 
 .header__theme-menu-button_active {
-  pointer-events: none;
   outline: 1px solid currentColor;
+  pointer-events: none;
 }
 
 .header__title {
   display: flex;
+  opacity: 0.9;
   color: var(--header-title, #DB00FF);
   font-family: inherit;
+  font-weight: 700;
   font-size: var(--logo-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
   font-style: normal;
-  font-weight: 700;
   line-height: 82.5%;
   text-shadow: 4px 4px 0px var(--header-title-shadow, #FF0070);
-  opacity: 0.9;
   
 }
 
@@ -175,9 +172,9 @@
 }
 
 .section__title {
+  color:  var(--section-title, #FF0070);
   font: inherit;
   font-weight: 700;
-  color:  var(--section-title, #FF0070);
 }
 
 .section__subtitle {
@@ -212,10 +209,10 @@
 }
 
 .section__image {
-  inline-size: 100%;
-  block-size: auto;
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
+  block-size: auto;
 }
 
 .footer {
@@ -223,87 +220,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  block-size: 100vh;
   min-height: 668px;
   padding: var(--indent, 10px);
+  block-size: 100vh;
 }
 
 .footer__title {
   color: var(--header-title, #DB00FF);
   font-family: inherit;
+  font-weight: 700;
   font-size: var(--logo-size, clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem));
   font-style: normal;
-  font-weight: 700;
   line-height: 82.5%;
   text-shadow: 2px 2px 0px var(--header-title-shadow, #FF0070);
 }
-/* @media (width <= 375px) {
-
-  .header__theme-menu {
-    margin-right: 10px;
-  }
-  .header__description {
-    inline-size: max(364px, 47.4vi);
-  }
-  .why,
-  .how__to {
-    grid-template-columns: 1fr;
-  }
-} */
-
-/* @media (375px < width <= 768px) {
-
-
-  .header__title {
-    position: relative;
-    margin-left: -10px;
-  }
-
-  .header__description {
-    inline-size: max(364px, 47.4vi);
-
-  }
-    
-  .why,
-  .how__to {
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .what .section__title {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-  }
-
-  .section__pictures {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto min(192px, 26vi) min(230px, 31vi) min(318px, 42vi);
-  }
-
-  .section__pictures .section__subtitle {
-    grid-column-end: span 3;
-  }
-  
-  .section__image {
-    block-size: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .section__image:first-of-type,
-  .section__image:last-of-type {
-    grid-column-end: span 2;
-  }
-
-  .section__image:nth-of-type(2),
-  .section__image:nth-of-type(3) {
-    grid-row-end: span 2;
-  }
-
-  .footer {
-    height: 768px;
-  }
-} */
 
 @media (width >= 768px) {
   .header__title {
@@ -336,9 +266,9 @@
   }
   
   .section__image {
-    block-size: 100%;
     object-fit: cover;
     object-position: center;
+    block-size: 100%;
   }
 
   .section__image:first-of-type,
@@ -399,9 +329,9 @@
   }
   
   .section__image {
-    block-size: 100%;
     object-fit: cover;
     object-position: center;
+    block-size: 100%;
   }
 
   .section__image:first-of-type,
@@ -413,5 +343,4 @@
   .section__image:nth-of-type(3) {
     grid-row-end: span 2;
   }
-  
 }
