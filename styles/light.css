@@ -29,11 +29,11 @@
 }
 
 .theme_light .title-decor {
-  color: currentColor;
+  color: #353430;
 }
 
 .theme_light .section__title {
-  color: currentColor;
+  color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
