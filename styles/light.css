@@ -17,7 +17,7 @@
   --button-color: var( --grey, #353430);
   --button-color-hover: var(--black-opasity_40, rgba(50, 49, 45, 0.40));
   --title-decor-color: var( --grey, #353430);
-  --title-decor-background: var(-pink, #FFC2E6);
+  --title-decor-background: var(--pink-red, #FF8DCB);
   --section-title: var( --grey, #353430);
   --section-link: var(--pink-red, #FF8DCB);
   --background-image: url(../images/cover-image-light.png);
@@ -51,7 +51,7 @@
     --button-color: var( --grey, #353430);
     --button-color-hover: var(--black-opasity_40, rgba(50, 49, 45, 0.40));
     --title-decor-color: var( --grey, #353430);
-    --title-decor-background: var(--pink, #FFC2E6);
+    --title-decor-background: var(--pink-red, #FF8DCB);
     --section-title: var( --grey, #353430);
     --section-link: var(--pink-red, #FF8DCB);
     --background-image: url(../images/cover-image-light.png);
