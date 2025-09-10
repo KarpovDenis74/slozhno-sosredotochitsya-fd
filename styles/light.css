@@ -10,17 +10,18 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --header-title: var(--pink, #FFC2E6);
-  --header-title-shadow:var(--pink2,  #FF8DCB);
-  --text-color: var(--black2, #353430);
-  --border-color: var(--black2, #353430);
-  --header-background: var(--pink2, #FF8DCB);
-  --button-color: var(--black2, #353430);
+  --header-title-shadow:var(--pink-red,  #FF8DCB);
+  --text-color: var( --grey, #353430);
+  --border-color: var( --grey, #353430);
+  --header-background: var(--pink-red, #FF8DCB);
+  --button-color: var( --grey, #353430);
   --button-color-hover: var(--black-opasity_40, rgba(50, 49, 45, 0.40));
-  --title-decor-color: var(--black2, #353430);
+  --title-decor-color: var( --grey, #353430);
   --title-decor-background: var(-pink, #FFC2E6);
-  --section-title: var(--black2, #353430);
-  --section-link: var(--pink2, #FF8DCB);
+  --section-title: var( --grey, #353430);
+  --section-link: var(--pink-red, #FF8DCB);
   --background-image: url(../images/cover-image-light.png);
+  --page-backgraund: var(--rose, #FFF1F7);
 }
 
 .theme_light .header__decor {
@@ -43,16 +44,16 @@
 @media (prefers-color-scheme: light) {
   :root {
     --header-title: var(--pink, #FFC2E6);
-    --header-title-shadow: var(--pink2,  #FF8DCB);
-    --text-color: var(--black2, #353430);
-    --border-color: var(--black2, #353430);
-    --header-background: var(--pink2, #FF8DCB);
-    --button-color: var(--black2, #353430);
+    --header-title-shadow: var(--pink-red,  #FF8DCB);
+    --text-color: var( --grey, #353430);
+    --border-color: var( --grey, #353430);
+    --header-background: var(--pink-red, #FF8DCB);
+    --button-color: var( --grey, #353430);
     --button-color-hover: var(--black-opasity_40, rgba(50, 49, 45, 0.40));
-    --title-decor-color: var(--black2, #353430);
+    --title-decor-color: var( --grey, #353430);
     --title-decor-background: var(--pink, #FFC2E6);
-    --section-title: var(--black2, #353430);
-    --section-link: var(--pink2, #FF8DCB);
+    --section-title: var( --grey, #353430);
+    --section-link: var(--pink-red, #FF8DCB);
     --background-image: url(../images/cover-image-light.png);
   }
 

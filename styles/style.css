@@ -17,7 +17,7 @@
   font-style: normal;
   line-height: var(--main-line-height, 130%);
 
-  /* background-color: var(--bg-color, gray); */
+  background-color: var(--page-backgraund, gray);
   background-image: var(--background-image, url(../images/cover-image-dark.png));
   background-repeat: no-repeat;
   background-position: center;
@@ -191,7 +191,7 @@
 
 .section__link {
   text-decoration: none;
-  text-shadow: 2px 1px 0 var(--section-link, #F1B2CE);
+  text-shadow: 2px 1px 0 var(--section-link, #FF0070);
 
   cursor: pointer;
 }

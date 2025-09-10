@@ -10,9 +10,9 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --header-title: var(--neon2, #DB00FF);
+  --header-title: var(--neon-rose, #DB00FF);
   --header-title-shadow:var(--neon, #FF0070);
-  --text-color: var(--pink3, #F1B2CE);
+  --text-color: var(--pink-rose, #F1B2CE);
   --border-color: var(--neon, #FF0070);
   --header-background: var(--neon, #FF0070);
   --button-color: var(--neon, #FF0070);
@@ -22,6 +22,7 @@
   --section-title: var(--neon, #FF0070);
   --section-link: var(--neon, #FF0070);
   --background-image: url(../images/cover-image-dark.png);
+  --page-backgraund: var(--black, #000028);
 }
 
 .theme_dark .header__decor {
