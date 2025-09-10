@@ -55,6 +55,7 @@
     --section-title: var( --grey, #353430);
     --section-link: var(--pink-red, #FF8DCB);
     --background-image: url(../images/cover-image-light.png);
+    --page-backgraund: var(--rose, #FFF1F7);
   }
 
   .header__decor {
